@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>음악 공유소</title>
+</head>
+ <style>
+      body {
+        margin: 0px;
+      }
+      p1 {
+        margin: 20px;
+        padding: 20px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+       p2 {
+        margin: 10px;
+        padding: 10px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+      }
+
+      .s1 {
+        background-color: #000000;
+        color: #ffffff;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+         0px -2px 20px rgba(255,255,255,0.4);
+      }
+
+            body {
+                margin:20px auto;
+                padding: 100;
+                font-family:"맑은 고딕";
+                font-size:0.9em;
+        }
+            ul#navi {
+                width: 150px;
+                text-indent: 10px;
+        }
+            ul#navi, ul#navi ul {
+                margin:0;
+                padding:0;
+                list-style:none;
+        }
+            li.group {
+                margin-bottom: 2px;
+        }
+            li.group div.title {
+                height: 35px;
+                line-height: 35px;
+                background:#000000;
+                cursor:pointer;
+        }
+            ul.sub li {
+                margin-bottom: 2px;
+                height:35px;
+                line-height:35px;
+                background:#f4f4f4;
+                cursor:pointer;
+        }
+            ul.sub li a {
+                display: block;
+                width: 100%;
+                height:100%;
+                text-decoration:none;
+                color:#000;
+        }
+            ul.sub li:hover {
+                background:#cf0;
+        }
+</style>
+<div>
+    <ul id = "navi">
+
+    <li class="group">
+      <div class="title"><a href="{% url 'index' %}" target="main"><p2 class="p">홈으로</p2></a></div>
+    </li>
+    </ul>
+</div>
+
+
+
+
+<div>
+<body bgcolor="#000000">
+  <table width="1000" border="1" align="center">
+    <tr><td>
+        <a href="{% url 'song' %}">인디</a>
+        <a href="{% url 'ballad' %}">발라드</a>
+        <a href="{% url 'pop' %}">팝송</a>
+        <a href="{% url 'rap' %}">랩</a>
+    </td></tr>
+
+  <tr>
+  <td>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xj6fHiF8Osg" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+  <td><strong><font color="#FFFFFF">&lt; 팝송&gt;<br></font></strong>
+  <p><font color="#FFFFFF"> Marroon 5 - [MAPS]<br><br>
+	첫 싱글 ‘Maps’는 펑키(funky)한 초기의 전형적인 마룬 5표 음악들과는 다소 다른, 팝/록 사운드를 추구하고 있는 작품이다.
+	심플하면서도 은은한 기타 리프 인트로에 애덤 리바인(Adam Levine) 특유의 매력적인 하이 톤 보컬 그리고 겹겹이 쌓아올린 보컬 하모니가 동행하는 곡이다.
+	하지만 그런 가운데서도 이들의 전매특허인 리듬감은 여전히 살아있다. 이 곡은 애덤 리바인과 아마르 말릭, 베니 블랑코 등이 함께 만든 작품인데 특히 아마르
+	말릭과 베니 블랑코는 이전 히트작들인 ‘Moves Like Jagger’와 ‘Payphone’ 등에도 참여했던 바 있다. 또 다른 송라이터들인 노엘 잔카넬라와 라이언
+	테더는 ‘Love Somebody’, ’Lucky Strike’ 등에 참여한 바 있다.
+  </font></p></td>
+  </tr>
+
+    <tr>
+  <td>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/5NPBIwQyPWE"
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen></iframe>
+ <td><strong><font color="#FFFFFF">&lt; 팝송&gt;<br></font></strong>
+  <p><font color="#FFFFFF">  Avril Lavigne - [Complicated]<br><br>
+오프닝 곡 ‘Losing Grip’에서 ‘Complicated’, ‘Sk8ter Boi’로 이어지는 세 곡은 에이브릴의 모든 특성이 가장 훌륭히
+집약되어 있는 트랙들이다. 싱글 히트곡 ‘Complicated’는 포크 팝 분위기를 풍기는 소박한 연주가 상큼한 보컬, 멜로디, 코러스와
+만나 거부할 수 없는 중독성 매력을 발산한다. 좀더 질주하는 느낌이 배가된 팝 펑크 넘버 ‘Sk8ter Boi’도 빼놓을 수 없는 베스트
+ 트랙. 한편 헤비한 사운드로 일관하는 ‘Unwanted’ 같은 곡은 무척 어둡다. 이밖에 어쿠스틱한
+느낌이 살아있는 ‘I’m With You’, ‘Tomorrow’, 희망에 대한 발라드 ‘Too Much To Ask’ 등도 빼놓을 수 없다.
+  </font></p></td>
+  </tr>
+
+  </table>
+
+</div>
+
+  </body>
+  </html>

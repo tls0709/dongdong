@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>음악 공유소</title>
+</head>
+ <style>
+      body {
+        margin: 0px;
+      }
+      p1 {
+        margin: 20px;
+        padding: 20px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+       p2 {
+        margin: 10px;
+        padding: 10px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+      }
+
+      .s1 {
+        background-color: #000000;
+        color: #ffffff;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+         0px -2px 20px rgba(255,255,255,0.4);
+      }
+
+            body {
+                margin:20px auto;
+                padding: 100;
+                font-family:"맑은 고딕";
+                font-size:0.9em;
+        }
+            ul#navi {
+                width: 150px;
+                text-indent: 10px;
+        }
+            ul#navi, ul#navi ul {
+                margin:0;
+                padding:0;
+                list-style:none;
+        }
+            li.group {
+                margin-bottom: 2px;
+        }
+            li.group div.title {
+                height: 35px;
+                line-height: 35px;
+                background:#000000;
+                cursor:pointer;
+        }
+            ul.sub li {
+                margin-bottom: 2px;
+                height:35px;
+                line-height:35px;
+                background:#f4f4f4;
+                cursor:pointer;
+        }
+            ul.sub li a {
+                display: block;
+                width: 100%;
+                height:100%;
+                text-decoration:none;
+                color:#000;
+        }
+            ul.sub li:hover {
+                background:#cf0;
+        }
+</style>
+<div>
+    <ul id = "navi">
+
+    <li class="group">
+      <div class="title"><a href="{% url 'index' %}" target="main"><p2 class="p">홈으로</p2></a></div>
+    </li>
+    </ul>
+</div>
+
+<body bgcolor="#000000">
+ <table width="1000" border="1" align="center">
+    <tr><td>
+        <a href="{% url 'song' %}">인디</a>
+        <a href="{% url 'ballad' %}">발라드</a>
+        <a href="{% url 'pop' %}">팝송</a>
+        <a href="{% url 'rap' %}">랩</a>
+    </td></tr>
+
+  <tr>
+  <td>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K8LltsLOIr8"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+  <td><strong><font color="#FFFFFF">&lt; 랩&gt;<br></font></strong>
+  <p><font color="#FFFFFF"> 비와이 - [Forever]<br><br>
+진짜로 여기저기 어디든 매번 들리는 그 이름, '비와이' 수많은 이들이 기다려온 그의 솔로 곡이 드디어 베일을 벗었다. 프로듀서 '사이먼도미닉',
+'그레이'와 '비와이'가 함께한 트랙 "Forever"는 지나친 자만도, 불필요한 겸손도 없는 스물넷의 비와이가 가진 있는 그대로의 자신감을 가감없이 담아낸 곡이다.
+  <br>
+  </font></p></td>
+  </tr>
+
+    <tr>
+  <td>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/LHUAmHYOXFM"
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen></iframe>
+ <td><strong><font color="#FFFFFF">&lt; 랩&gt;<br></font></strong>
+  <p><font color="#FFFFFF">  Dingo X DAMOIM - [아마두]<br><br>
+[Dingo X DAMOIM (Part 2) - 아마두 (Prod. by NOISEMASTERMINSU)]
+
+'내년엔 잘될꺼야 아마두'
+
+16년 지기 84년생 래퍼들이 딩고에 다 모였다.
+둘도없는힙합친구 : 다모임의 두 번째 노래
+  </font></p></td>
+  </tr>
+
+
+  </table>
+  </body>
+  </html>

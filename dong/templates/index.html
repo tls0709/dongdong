@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+
+
+{% block header %}
+ <style>
+      body {
+        margin: 0px;
+      }
+      p1 {
+        margin: 20px;
+        padding: 20px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+       p2 {
+        margin: 10px;
+        padding: 10px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+      }
+
+      .s1 {
+        background-color: #000000;
+        color: #ffffff;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+         0px -2px 20px rgba(255,255,255,0.4);
+      }
+
+            body {
+                margin:20px auto;
+                padding: 100;
+                font-family:"맑은 고딕";
+                font-size:0.9em;
+        }
+            ul#navi {
+                width: 150px;
+                text-indent: 10px;
+        }
+            ul#navi, ul#navi ul {
+                margin:0;
+                padding:0;
+                list-style:none;
+        }
+            li.group {
+                margin-bottom: 2px;
+        }
+            li.group div.title {
+                height: 35px;
+                line-height: 35px;
+                background:#000000;
+                cursor:pointer;
+        }
+            ul.sub li {
+                margin-bottom: 2px;
+                height:35px;
+                line-height:35px;
+                background:#f4f4f4;
+                cursor:pointer;
+        }
+            ul.sub li a {
+                display: block;
+                width: 100%;
+                height:100%;
+                text-decoration:none;
+                color:#000;
+        }
+            ul.sub li:hover {
+                background:#cf0;
+        }
+</style>
+<div align="center">
+	<p1 class="s1">음악 공유소</p1>
+</div>
+{% endblock %}
+
+
+{% block menu %}
+  <div>
+    <ul id = "navi">
+
+    <li class="group">
+      <div class="title"><a href="{% url 'index' %}" target="main"><p2 class="p">홈으로</p2></a></div>
+    </li>
+    <li class="group">
+      <div class="title"><p2 class="p">장르별 대표곡</p2></div>
+	  <ul class="sub">
+        <li><a href="{% url 'pop' %}"> 팝 </a></li>
+	    <li><a href="{% url 'song' %}">인디</a></li>
+	    <li><a href="{% url 'ballad' %}">발라드</a></li>
+        <li><a href="{% url 'rap' %}">랩</a></li>
+	  </ul>
+    </li>
+    <li class="group">
+      <div class="title"><a href="{% url 'recom' %}" target="main"><p2 class="p">추천곡</p2></a></div>
+    </li>
+    <li class="group">
+      <div class="title"><a href="{% url 'visitor' %}" target="main"><p2 class="p">방문객 추천곡</p2></a></div>
+    </li>
+    </ul>
+
+  </div>
+{% endblock %}
+
+
+{% block introduction %}
+<div>
+<body bgcolor="#000000">
+  <embed src="conan.mp3" loop="true" hidden="true"   autostart="true"> </embed>
+  <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td></td>
+  <td><font color="#FFFFFF" size="3">
+
+  음악을 좋아하는 사람들을 위해 <br>
+  소통할 수 있는 공간을 만들었습니다.<br>
+  <br>
+  <br>
+  대중가요, 인디, 팝, 랩, 트로트<br>
+  장르 불문하고 모든 음악을 공유합니다.
+  <br>
+  <br>
+  관리자의 추천 노래를 들을 수 있고,<br>
+  방문자의 추천 노래를 들을 수 있습니다.<br>
+  <br>
+  <br>
+  회원가입 후 많은 이용 바랍니다.
+  <br>
+  <br>
+ </font></td>
+
+  <td align="center"><img src="https://en.pimg.jp/029/627/964/1/29627964.jpg" width="300" height="337" border="1"></td>
+  </tr>
+  </table>
+  <br>
+  </body>
+  </div>
+{% endblock %}

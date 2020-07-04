@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>음악 공유소</title>
+</head>
+ <style>
+      body {
+        margin: 0px;
+      }
+      p1 {
+        margin: 20px;
+        padding: 20px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+       p2 {
+        margin: 10px;
+        padding: 10px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+      }
+
+      .s1 {
+        background-color: #000000;
+        color: #ffffff;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+         0px -2px 20px rgba(255,255,255,0.4);
+      }
+
+            body {
+                margin:20px auto;
+                padding: 100;
+                font-family:"맑은 고딕";
+                font-size:0.9em;
+        }
+            ul#navi {
+                width: 150px;
+                text-indent: 10px;
+        }
+            ul#navi, ul#navi ul {
+                margin:0;
+                padding:0;
+                list-style:none;
+        }
+            li.group {
+                margin-bottom: 2px;
+        }
+            li.group div.title {
+                height: 35px;
+                line-height: 35px;
+                background:#000000;
+                cursor:pointer;
+        }
+            ul.sub li {
+                margin-bottom: 2px;
+                height:35px;
+                line-height:35px;
+                background:#f4f4f4;
+                cursor:pointer;
+        }
+            ul.sub li a {
+                display: block;
+                width: 100%;
+                height:100%;
+                text-decoration:none;
+                color:#000;
+        }
+            ul.sub li:hover {
+                background:#cf0;
+        }
+</style>
+<div>
+    <ul id = "navi">
+
+    <li class="group">
+      <div class="title"><a href="{% url 'index' %}" target="main"><p2 class="p">홈으로</p2></a></div>
+    </li>
+    </ul>
+</div>
+<body bgcolor="#000000">
+ <table width="1000" border="1" align="center">
+    <tr><td>
+        <a href="{% url 'song' %}">인디</a>
+        <a href="{% url 'ballad' %}">발라드</a>
+        <a href="{% url 'pop' %}">팝송</a>
+        <a href="{% url 'rap' %}">랩</a>
+    </td></tr>
+
+  <tr>
+  <td>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zaZBQhLcBqs"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+  <td><strong><font color="#FFFFFF">&lt; 인디&gt;<br></font></strong>
+  <p><font color="#FFFFFF"> 넬 - [기억을 걷는 시간]<br><br>
+  <br>이별, 헤어짐에 대한 아픔, 걱정, 그리움 등을 그려내면서 그들의 서정성 짙은 음악적 색깔과 절묘하게 매칭을 이루고 있다.<br>
+  전반적인 템포를 살펴보면 잔잔한 흐름을 통해 앨범 전체의 스토리적 맥락이 이어지도록 노력을 기울인 흔적이 보인다.
+  </font></p></td>
+  </tr>
+
+    <tr>
+  <td><iframe width="560" height="315" src="https://www.youtube.com/embed/_bIVI87flu4"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+  <td><strong><font color="#FFFFFF">&lt; 인디&gt;<br></font></strong>
+  <p><font color="#FFFFFF"> 10cm - [봄이 좋냐]<br><br>
+  <br>도입부를 꾸미는 '윤철종'의 기타는 뺨을 간질이는 봄바람처럼 가벼운 터치로 달콤하고 포근한 멜로디를 연주한다.
+  여기까지는 분명 보편타당한 인식 내에서 짐작 가능한 전형적인 '봄 노래'의 그것이다. 적당히 살랑이고 또 적당히 달달한,
+  화사한 봄 속 화사한 사랑의 장면이 그려지는 다분히 '클리셰'적인 인트로다. 그러나 액센트 또렷한 음색으로 '꽃이 언제 피는지
+  그딴 게 뭐가 중요한데?'라며 시작부터 독설을 뱉는 '권정열'의 노래 첫 소절이 나오는 순간 그제서야 청자들은 이 노래가 그렇고
+  그런 봄 찬양가가 아님을 깨닫게 될 것이다.
+  </font></p></td>
+  </tr>
+
+
+  </table>
+  </body>
+  </html>
